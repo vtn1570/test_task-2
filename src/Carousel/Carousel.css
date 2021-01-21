@@ -1,27 +1,58 @@
+
 .image {
     height: 550px;
     
+}
+
+.carousel-container {
+    padding-top: 50px;
 }
 
 .carousel-track {
     display: flex;
     justify-content: center;
     overflow: hidden;
+    height: 550px;
+    position: relative;
 }
 
 .carousel-item {
     padding-left: 35px;
     padding-right: 35px;
     background: rgb(219, 213, 213);
-    margin:25px;
+    margin-right: 15px;
+    margin-left: 15px;
     position: relative;
 }
 
-.shadow {
+/* .shadow {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,.5);
+    background: rgba(248, 237, 237, 0.5);
+} */
+
+.carousel-arrow__right {
+    position: absolute;
+    width: 135px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(248, 237, 237, 0.3);
+}
+
+.carousel-arrow__left {
+    position: absolute;
+    width: 135px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(248, 237, 237, 0.3);
+}
+
+.carousel-arrow:hover {
+    background: rgba(248, 237, 237, 0.8);
+    cursor: pointer;
 }
