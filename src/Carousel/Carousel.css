@@ -1,0 +1,27 @@
+.image {
+    height: 550px;
+    
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.carousel-item {
+    padding-left: 35px;
+    padding-right: 35px;
+    background: rgb(219, 213, 213);
+    margin:25px;
+    position: relative;
+}
+
+.shadow {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.5);
+}
