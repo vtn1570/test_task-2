@@ -1,6 +1,6 @@
 
 .image {
-    height: 550px;
+    width: 1000px;
     
 }
 
@@ -10,7 +10,6 @@
 
 .carousel-track {
     display: flex;
-    justify-content: center;
     overflow: hidden;
     height: 550px;
     position: relative;
@@ -23,20 +22,13 @@
     margin-right: 15px;
     margin-left: 15px;
     position: relative;
+    transform: translateX(-960px);
 }
 
-/* .shadow {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background: rgba(248, 237, 237, 0.5);
-} */
 
 .carousel-arrow__right {
     position: absolute;
-    width: 135px;
+    width: 125px;
     right: 0;
     top: 0;
     bottom: 0;
@@ -45,7 +37,7 @@
 
 .carousel-arrow__left {
     position: absolute;
-    width: 135px;
+    width: 125px;
     left: 0;
     top: 0;
     bottom: 0;
@@ -56,3 +48,4 @@
     background: rgba(248, 237, 237, 0.8);
     cursor: pointer;
 }
+

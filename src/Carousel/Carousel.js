@@ -1,34 +1,28 @@
 import React from "react";
 import "./Carousel.css"
+import template from "./template";
 import image1 from "../images/image1.jpg"
 import image2 from "../images/image2.jpg"
 import image3 from "../images/image3.jpg"
-import swiper from "./swiper";
+import image4 from "../images/image4.jpg"
+import image5 from "../images/image5.jpg"
+import Nav from "../Nav/Nav";
 
+const images = [image1, image2, image3, image4, image5] // add new images in carousel
 
-function Carousel() {
-    swiper()
+export default function Carousel() {
+    const mediaQuery = window.matchMedia("(max-width: 800px)")
+    if(mediaQuery.matches) {
+        console.log('gggod')
+    }
     return (
         <>
         <div className="carousel-container">
             <div className="carousel-track">
-                <div className="carousel-item">
-                    <div className="shadow"></div>
-                    <img className="image" src={image1}></img>
-                </div>
-                <div className="carousel-item">
-                    <img className="image" src={image2}></img>
-                </div>
-                <div className="carousel-item">
-                    <div className="shadow"></div>
-                    <img className="image" src={image3}></img>
-                </div>
-                <div className="carousel-arrow carousel-arrow__left"></div>
-                <div className="carousel-arrow carousel-arrow__right"></div>
+                {template(images)}
+                <Nav images = {images}/>
             </div>
         </div>
         </>
     )
 }
-
-export default Carousel 
